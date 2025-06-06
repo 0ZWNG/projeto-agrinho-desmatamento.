@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmatamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="floresta.png" alt="Floresta" class="banner">
+        <nav>
+            <ul>
+                <li><button onclick="mostrarSecao('home')">Home</button></li>
+                <li><button onclick="mostrarSecao('sobre')">Sobre</button></li>
+                <li><button onclick="mostrarSecao('problemas')">Problemas</button></li>
+                <li><button onclick="mostrarSecao('solucoes')">Soluções</button></li>
+            </ul>
+        </nav>
+        <div class="social-buttons">
+            <a href="https://wa.me/5581999999999" target="_blank" class="whatsapp" aria-label="WhatsApp"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com" target="_blank" class="instagram" aria-label="Instagram"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram"></a>
+            <button onclick="aumentarFonte()">A+</button>
+            <button onclick="diminuirFonte()">A-</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="secao ativa">
+            <h1>Bem-vindo ao site sobre Desmatamento</h1>
+            <p>Explore os tópicos abaixo para saber mais:</p>
+            <button onclick="mostrarSecao('problemas')">Ver Problemas</button>
+            <button onclick="mostrarSecao('solucoes')">Ver Soluções</button>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1RCa7oZJYIY" 
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre o Desmatamento</h2>
+            <p>O desmatamento é a remoção da cobertura vegetal natural de uma área, normalmente para uso agropecuário, urbano ou madeireiro. Ele causa diversos impactos ambientais como perda de biodiversidade, alterações climáticas e degradação do solo.</p>
+        </section>
+
+        <section id="problemas" class="secao">
+            <h2>Problemas Causados pelo Desmatamento</h2>
+            <ul>
+                <li>Perda de habitat e biodiversidade</li>
+                <li>Aumento das emissões de gases de efeito estufa</li>
+                <li>Alteracão no ciclo da água</li>
+                <li>Empobrecimento do solo</li>
+                <li>Impactos nas comunidades locais</li>
+            </ul>
+        </section>
+
+        <section id="solucoes" class="secao">
+            <h2>Soluções para o Desmatamento</h2>
+            <ul>
+                <li>Reflorestamento e recuperação de áreas degradadas</li>
+                <li>Uso sustentável dos recursos florestais</li>
+                <li>Fiscalização e aplicação de leis ambientais</li>
+                <li>Educação ambiental</li>
+                <li>Apoio a iniciativas de agricultura sustentável</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Site sobre Desmatamento</p>
+    </footer>
+</body>
+
+</html>
